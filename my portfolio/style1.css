@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;900&family=Playfair+Display:wght@400;500;700&display=swap');
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Nunito' , sans-serif;
+}
+
+#header{
+    height: 100vh;
+    background: url('../Images/portfolio-bg.jpg');
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+#header #navbar{
+    
+    position: absolute;
+    left: 2%;
+    top: 5%; 
+}
+
+#header #navbar a{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    margin: 0 2rem;
+    font-size: 1.6rem;
+    transition: all 0.15s ease-in-out;
+}
+
+#navbar a i{
+    font-size: 3rem;
+    padding: 0.3rem;
+    color: rgb(132, 0, 0);
+}
+
+ #navbar a:hover{
+    color: rgb(83, 22, 22);
+    box-shadow: 0 0 0.8rem 0.2rem rgb(0, 0, 0);
+    border-radius: 0.4rem;
+}
+
+    
+/* ################################################################################## */
+#header .my-short-info{
+    /* padding: 2rem 0 0 2rem; */
+    position: absolute;
+    right: 2%;
+    top: 7%;
+    /* border: 2px solid black; */
+
+}
+
+.my-short-info h1{
+    font-size: 3.5rem;
+    color:rgb(0, 0, 0);
+    margin-right: 4rem;
+    width: 98%;
+   
+}
+
+.my-short-info h1 .my-name{
+    display: inline-block;
+    position: relative;
+    margin-left: 1rem;
+    color:  rgb(246, 190, 24);
+     /* -webkit-text-stroke: 0.2rem rgb(239, 53, 53); */
+}
+
+.my-short-info h1 hr{
+    border-top: 0.5rem solid rgb(61, 59, 59);
+    border-bottom: 0.4rem solid rgb(154, 35, 35);
+}
+
+.my-short-info h1 .my-name{
+    font-size: 7rem;
+    font-weight: 900;  
+     width: 70%;
+    -webkit-text-stroke: 0.2rem rgb(230, 165, 66);
+}
+
+.my-short-info h1 span::before {
+    content: 'PAWAN...';
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 0%;
+    height: 90%;
+    color: rgb(252, 188, 24);
+    overflow: hidden;
+    border-right: 0.5rem solid rgb(0, 0, 0);
+    /* animation: my-name 6s 1s infinite linear; 
+     -webkit-animation: my-name 6s 1s infinite linear; */
+}
+
+@keyframes my-name{
+    0%,3%{
+        width: 0;
+    }
+    5%{
+        -webkit-text-stroke: 0.2rem rgb(228, 178, 49); 
+        text-shadow: 0.8rem 0.8rem 1rem black;
+    }
+    50%,90%{
+        width: 100%;
+        -webkit-text-stroke: 0.2rem rgb(228, 178, 49);
+        text-shadow: 0.5rem 0.8rem 1rem black;
+    }
+    100%{
+        width: 0%;
+        border-right: none;    
+}
+}
+
+.my-short-info .title{
+    margin: 0 2rem;
+}
+
+.my-short-info p{
+    font-size: 2rem;
+    border-bottom: 0.5rem solid rgb(70, 9, 9);    
+}
+
+.my-short-info .title hr{
+    border-bottom: 0.3rem solid rgb(164, 18, 18);
+}
+
+#header .scroll-sign{
+    position: absolute;
+    bottom: 1%;
+    left: 50%;
+}
+.scroll-sign a{
+    font-size: 5rem;
+    line-height: 0;
+    display: inline-block;
+    animation: scroll-sign 1.5s infinite ease ;
+    -webkit-animation: scroll-sign 1s infinite ease ;
+    color: black;
+}
+
+@keyframes scroll-sign{
+    0%{
+        color: black;
+        -webkit-text-stroke: 0.2rem rgb(217, 209, 209);
+
+    }
+    25%{
+        color: black;
+        -webkit-text-stroke: 0.2rem rgb(217, 209, 209);
+        
+    }
+    75%{
+        color: rgb(232, 222, 222);
+        -webkit-text-stroke: 0.2rem rgb(44, 44, 44);
+    }
+    100%{
+        color: rgb(232, 222, 222);
+        -webkit-text-stroke: 0.2rem rgb(44, 44, 44);
+    }
+}
+
+/* ##################################################################### */
+/* ##########HERE COMES SECTION####### */
+
+#section-block1{
+    height: 100vh;
+    background-color: rgb(8, 37, 50);
+}
+
+#section-block1 .bg-block{
+    background:  url('../Images/portfolio1.jpg') ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    width: 96vw;
+    height: 97vh;
+    top: 3vh;
+    left: 2vw;
+    border-top-left-radius: 2.5rem;
+    border-top-right-radius: 2.5rem;
+}
+
+.bg-block .skills-block{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 2.5rem;
+    border-top-right-radius: 2.5rem; 
+} 
+
+.skills-block .name-skill hr{
+    width: 0;
+    display: none;
+}
+.bg-block .skills-block .skill-box{
+    position: absolute;
+    top: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    align-content: flex-start;
+    justify-content: space-evenly;
+    opacity: 0;
+}
+.skills-block .skill{
+    color: rgb(255, 255, 255);
+    /* background: rgba(0, 0, 0, 0.456); */
+    margin: 1rem;
+    padding: 1rem;
+    font-size: 2rem;
+    /* border: 3px solid red; */
+    flex-basis: 30%;
+    align-self: flex-start;
+    z-index: 2;
+    /* opacity: 0; */
+} 
+.skills-block .name-skill{
+   font-size: 5rem;
+   flex-basis: 100%;
+   letter-spacing: 0.2rem;
+   padding: 5rem 0 0 0;
+   color: black;
+   -webkit-text-stroke: 0.1rem rgb(255, 255, 255);
+   text-align: center;
+   z-index: 2;
+   /* border-bottom: 0.3rem solid rgb(0, 255, 247); */
+}
+
+.skills-block .reveal-link{
+    position: absolute;
+    top: 18%;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    padding: 0 3.5rem;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    background: rgba(0, 0, 0, 0.394);
+    box-shadow: 0 0 1.5rem 1rem rgb(52, 185, 152);
+}
+
+.skills-block .reveal-link i{
+    font-size: 3rem;
+    color: rgb(136, 255, 0);
+}
+
+.skills-block .reveal-link:hover+.skill-box{
+    animation: reveal .7s forwards 1 ease;
+    -webkit-animation: reveal .7s forwards 1 ease;
+}
+
+@keyframes reveal{
+    0%{
+        opacity: 1;
+        top: 80%;
+    }
+    100%{
+        opacity: 1;
+        top: 30%;
+    }
+}
+
+.skills-block .skill-box .skill > h2{
+    font-size: 2.3rem;
+    font-family: 'Nunito', sans-serif;
+    -webkit-text-stroke: 0.1rem rgb(77, 193, 255);
+    color: rgb(255, 255, 255);
+}
+
+.skills-block .skill-box .skill > p{
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 1.5rem;
+    word-spacing: 0.3rem;
+    letter-spacing: 0.1rem;
+    padding: 2rem 0;
+    color:rgb(255, 255, 255);
+}
+
+.skills-block .reveal-link:hover+.skill-box .skill{
+    animation: box-shadow 1.5s forwards ease;
+    -webkit-animation: box-shadow 1.5s forwards ease;
+}
+
+@keyframes box-shadow{
+    95%,100%{
+        background: rgba(0, 0, 0, 0.394);
+        box-shadow: 0 0 0.8rem .3rem rgb(0, 0, 0);
+        border-radius: 1rem;
+        -webkit-border-radius: 1rem;
+        -moz-border-radius: 1rem;
+        -ms-border-radius: 1rem;
+        -o-border-radius: 1rem;
+    }
+}
+
+/* ###########SECTION2#################### */
+
+#section-block2{
+    height: 100vh;
+    background: rgb(74, 7, 7);
+    position: relative;
+}
+
+#section-block2 .other-slot{
+    background: url('../Images/portfolio2.jpg') ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    width: 96vw;
+    height: 85vh;
+    left: 2vw;
+    border-bottom-left-radius: 2.5rem;
+    border-bottom-right-radius: 2.5rem;
+}
+
+.other-slot .project-box .project-heading h1{
+    text-align: center;
+    color: white;
+    font-size: 4rem;
+    padding: 2rem;
+    background: rgba(0, 0, 0, 0.684);
+    -webkit-text-stroke: 0.2rem red;
+}
+
+#section-block2 #footer{
+    position: absolute;
+    bottom: 0;
+    background:rgb(11, 11, 41);
+    width: 100%;   
+}
+#footer .social-links{
+    text-align: center;
+}
+
+#footer .social-links a{
+    font-size: 6rem;
+    color: rgb(214, 211, 211);
+    margin: 0 1rem;
+}
