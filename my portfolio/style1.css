@@ -23,33 +23,61 @@ body{
     background-size: cover;
     position: relative;
 }
-
-#header #navbar{
-    
+#header .home{
     position: absolute;
-    left: 2%;
-    top: 5%; 
-    border: 2px solid blue;
+    top: 4%;
+    left: 5%;
+
+}
+#header .about{
+    position: absolute;
+    top: 4%;
+    left: 11%;
+}
+#header .contact{
+    position: absolute;
+    top: 4%;
+    left: 17%;
 }
 
-#header #navbar a{
-    display: inline-block;
+#header .home a, .about a, .contact a{
     text-decoration: none;
-    color: black;
-    margin: 0 2rem;
+    display: inline-block;
     transition: all 0.15s ease-in-out;
 }
 
-#navbar a i{
+.home a i, .about a i, .contact a i{
     font-size: 3rem;
     padding: 0.3rem;
     color: rgb(132, 0, 0);
 }
 
- #navbar a:hover{
+ #header .home i:hover{
     color: rgb(83, 22, 22);
     box-shadow: 0 0 0.8rem 0.2rem rgb(0, 0, 0);
     border-radius: 0.4rem;
+    -webkit-border-radius: 0.4rem;
+    -moz-border-radius: 0.4rem;
+    -ms-border-radius: 0.4rem;
+    -o-border-radius: 0.4rem;
+}
+#header .about a:hover{
+    color: rgb(83, 22, 22);
+    box-shadow: 0 0 0.8rem 0.2rem rgb(0, 0, 0);
+    border-radius: 0.4rem;
+    -webkit-border-radius: 0.4rem;
+    -moz-border-radius: 0.4rem;
+    -ms-border-radius: 0.4rem;
+    -o-border-radius: 0.4rem;
+}
+#header .contact a:hover{
+    color: rgb(83, 22, 22);
+    box-shadow: 0 0 0.8rem 0.2rem rgb(0, 0, 0);
+    border-radius: 0.4rem;
+    -webkit-border-radius: 0.4rem;
+    -moz-border-radius: 0.4rem;
+    -ms-border-radius: 0.4rem;
+    -o-border-radius: 0.4rem;
 }
 
     
@@ -97,8 +125,8 @@ body{
     color: rgb(252, 188, 24);
     overflow: hidden;
     border-right: 0.5rem solid rgb(0, 0, 0);
-    /* animation: my-name 6s 1s infinite linear; 
-     -webkit-animation: my-name 6s 1s infinite linear; */
+    animation: my-name 6s 1s infinite linear; 
+     -webkit-animation: my-name 6s 1s infinite linear;
 }
 
 @keyframes my-name{
@@ -433,10 +461,9 @@ body{
 
 /* ######ABOUT AND CONTACT######## */
 
-#header .about-me{
+#header #about-me{
     position: absolute;
     display: flex;
-    /* flex-wrap: wrap; */
     width: 45%;
     height: 45%;
     right: 2%;
@@ -451,33 +478,25 @@ body{
     background: linear-gradient(rgb(218, 221, 29), rgb(224, 176, 17));
     
 }
-#navbar a.about:hover+.about-me{
-    animation: show-about 1s forwards ease;
-    -webkit-animation: show-about 1s forwards ease;
+.about:hover ~ #about-me{
+    animation: show-about .6s forwards ease;
+    -webkit-animation: show-about .6s forwards ease;
 }
 @keyframes show-about{
     0%{
         opacity: 0;
     }
-    20%{
-        opacity: .3;
-    }
-    50%{
-        opacity: .6;
-    }
-    70%{
-        opacity: .8;
-    }
+
     100%{
         opacity: 1;
     }
 }
 
-#header .about-me .img-block{
+#header #about-me .img-block{
     height: 100%;
     flex-basis: 50%;
 }
-#header .about-me .img-block img{
+#header #about-me .img-block img{
     object-fit: cover;
     width: 12rem;
     height: 12rem;
@@ -495,7 +514,7 @@ body{
     -o-transform: translateX(-50%);
     box-shadow: 0 0 .8rem .3rem rgb(110, 108, 8);
 }
-#header .about-me .img-block h3{
+#header #about-me .img-block h3{
     text-align: center;
     font-size: 1.8rem;
     margin: 2rem 0 .5rem 0;
@@ -503,12 +522,12 @@ body{
     font-weight: 500;
     -webkit-text-stroke: 0.1rem rgb(21, 117, 82);
 }
-#header .about-me .img-block h4{
+#header #about-me .img-block h4{
     text-align: center;
     font-size: 1.5rem;
 }
 
-#header .about-me .text-block{
+#header #about-me .text-block{
     flex-basis: 50%;
     background: rgba(255, 255, 255, 0.318);
     padding: 2rem 1rem 1rem 2rem;
@@ -520,14 +539,14 @@ body{
     margin: 2rem;
     box-shadow: 0 0 .5rem .1rem rgb(221, 154, 31);
 }
-#header .about-me .text-block p{
+#header #about-me .text-block p{
     font-size: 1.3rem;
     font-family: 'Playfair Display', sans-serif;
     font-weight: 500;
 }
 /* #######ABOUT ENDS CONTACT STARTS#################################### */
 
-#header .contact-me{
+#header #contact-me{
     position: absolute;
     display: flex;
     flex-wrap: wrap;
@@ -544,40 +563,29 @@ body{
     -ms-border-radius:2rem;
     -o-border-radius:2rem;
     background: linear-gradient(rgb(228, 207, 15), rgb(21, 165, 178));
-    /* opacity: 0; */
+    opacity: 0;
 }
 
-#navbar a.contact:hover{
-    /* animation: show-contact 1s forwards ease; */
-    /* -webkit-animation: show-contact 1s forwards ease; */
+.contact:hover ~ #contact-me{
+    animation: show-contact 0.6s forwards ease;
+    -webkit-animation: show-contact 0.6s forwards ease;
 }
 @keyframes show-contact{
     0%{
         opacity: 0;
     }
-    20%{
-        opacity: .2;
-    }
-    50%{
-        opacity: .5;
-    }
-    70%{
-        opacity: .7;
-    }
-    90%{
-        opacity: .9;
-    }
+    
     100%{
         opacity: 1;
     }
 }
 
 
-#header .contact-me .img-block{
+#header #contact-me .img-block{
     flex-basis: 30%;
     height: 30%;
 }
-#header .contact-me .img-block img{
+#header #contact-me .img-block img{
     object-fit: cover;
     width: 9rem;
     height: 9rem;
@@ -596,13 +604,13 @@ body{
     box-shadow: 0 0 .5rem .2rem rgb(65, 61, 61);
 }
 
-#header .contact-me .contact-info i{
+#header #contact-me .contact-info i{
     font-size: 2rem;
     display: inline;
     color: #ff3c00e5;
 }
 
-#header .contact-me .contact-info .gmail{
+#header #contact-me .contact-info .gmail{
     
     padding: 1.5rem 1rem;
     margin-top: 1rem;
@@ -615,7 +623,7 @@ body{
     box-shadow: 0 0 .5rem 0.1rem rgb(105, 97, 97);
 }
 
-#header .contact-me .contact-info .phone-no{
+#header #contact-me .contact-info .phone-no{
     margin-top: 1rem;
     padding: 1.5rem 1rem;
     background: rgba(255, 255, 255, 0.222);
@@ -627,20 +635,20 @@ body{
     box-shadow: 0 0 .5rem 0.1rem rgb(105, 95, 95);
 }
 
-#header .contact-me .contact-info h3{
+#header #contact-me .contact-info h3{
     display: inline;
     font-size: 1.3rem;
     padding-left: 1rem;
     color: rgb(0, 0, 0);
 }
 
-#header .contact-me .contact-info p{
+#header #contact-me .contact-info p{
     font-size: 1.5rem;
     text-align: center;
     font-weight: 900;
     color: rgb(84, 11, 11);
 }
-#header .contact-me .contact-info .other-info p{
+#header #contact-me .contact-info .other-info p{
     padding: 1.5rem;
     font-weight: 900;
     color: rgb(0, 0, 0);
