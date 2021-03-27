@@ -1,0 +1,1110 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;900&family=Playfair+Display:wght@400;500;700&display=swap');
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Nunito' , sans-serif;
+}
+#header{
+    height: 100vh;
+    background: url('./Images/portfolio-bg.jpg');
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+#header .home{
+    position: absolute;
+    top: 4%;
+    left: 5%;
+
+}
+#header .about{
+    position: absolute;
+    top: 4%;
+    left: 11%;
+}
+#header .contact{
+    position: absolute;
+    top: 4%;
+    left: 17%;
+}
+
+#header .home a, .about a, .contact a{
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.15s ease-in-out;
+}
+
+.home a i, .about a i, .contact a i{
+    font-size: 3rem;
+    padding: 0.3rem;
+    color: rgb(132, 0, 0);
+}
+
+ #header .home i:hover{
+    color: rgb(83, 22, 22);
+    box-shadow: 0 0 0.8rem 0.2rem rgb(0, 0, 0);
+    border-radius: 0.4rem;
+    -webkit-border-radius: 0.4rem;
+    -moz-border-radius: 0.4rem;
+    -ms-border-radius: 0.4rem;
+    -o-border-radius: 0.4rem;
+}
+#header .about a:hover{
+    color: rgb(83, 22, 22);
+    box-shadow: 0 0 0.8rem 0.2rem rgb(0, 0, 0);
+    border-radius: 0.4rem;
+    -webkit-border-radius: 0.4rem;
+    -moz-border-radius: 0.4rem;
+    -ms-border-radius: 0.4rem;
+    -o-border-radius: 0.4rem;
+}
+#header .contact a:hover{
+    color: rgb(83, 22, 22);
+    box-shadow: 0 0 0.8rem 0.2rem rgb(0, 0, 0);
+    border-radius: 0.4rem;
+    -webkit-border-radius: 0.4rem;
+    -moz-border-radius: 0.4rem;
+    -ms-border-radius: 0.4rem;
+    -o-border-radius: 0.4rem;
+}
+
+    
+/* ################################################################################## */
+#header .my-short-info{
+    position: absolute;
+    right: 2%;
+    top: 7%;
+}
+
+.my-short-info h1{
+    font-size: 3.5rem;
+    color:rgb(0, 0, 0);
+    margin-right: 4rem;
+    width: 98%;
+   
+}
+
+.my-short-info h1 .my-name{
+    display: inline-block;
+    position: relative;
+    margin-left: 1rem;
+    color:  rgb(246, 190, 24);
+    font-size: 7rem;
+    font-weight: 900;  
+     width: 72%;
+    -webkit-text-stroke: 0.2rem rgb(230, 165, 66);
+}
+
+.my-short-info h1 hr{
+    border-top: 0.5rem solid rgb(61, 59, 59);
+    border-bottom: 0.4rem solid rgb(154, 35, 35);
+}
+
+.my-short-info h1 span::before {
+    content: 'PAWAN...';
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 0%;
+    height: 90%;
+    color: rgb(252, 188, 24);
+    overflow: hidden;
+    border-right: 0.5rem solid rgb(0, 0, 0);
+    animation: my-name 6s 1s infinite linear; 
+     -webkit-animation: my-name 6s 1s infinite linear;
+}
+
+@keyframes my-name{
+    0%,3%{
+        width: 0;
+    }
+
+    50%,90%{
+        width: 100%;
+        -webkit-text-stroke: 0.2rem rgb(228, 178, 49);
+        text-shadow: 0.8rem 0.8rem 1rem black;
+
+    }
+    100%{
+        width: 0%;
+        border-right: none;
+        text-shadow: 0.8rem 0.8rem 1rem black;
+}
+}
+
+.my-short-info .title{
+    margin: 0 2rem;
+}
+
+.my-short-info p{
+    font-size: 2rem;
+    border-bottom: 0.5rem solid rgb(70, 9, 9);    
+}
+
+.my-short-info .title hr{
+    border-bottom: 0.3rem solid rgb(164, 18, 18);
+}
+
+#header .scroll-sign{
+    position: absolute;
+    bottom: 1%;
+    left: 50%;
+}
+.scroll-sign a{
+    font-size: 5rem;
+    line-height: 0;
+    display: inline-block;
+    animation: scroll-sign 1.5s infinite ease ;
+    -webkit-animation: scroll-sign 1s infinite ease ;
+    color: black;
+}
+
+@keyframes scroll-sign{
+    0%{
+        color: black;
+        -webkit-text-stroke: 0.2rem rgb(217, 209, 209);
+
+    }
+    25%{
+        color: black;
+        -webkit-text-stroke: 0.2rem rgb(217, 209, 209);
+        
+    }
+    75%{
+        color: rgb(232, 222, 222);
+        -webkit-text-stroke: 0.2rem rgb(44, 44, 44);
+    }
+    100%{
+        color: rgb(232, 222, 222);
+        -webkit-text-stroke: 0.2rem rgb(44, 44, 44);
+    }
+}
+
+/* ##################################################################### */
+/* ##########HERE COMES SECTION####### */
+
+#section-block1{
+    height: 100vh;
+    background-color: rgb(8, 37, 50);
+}
+
+#section-block1 .bg-block{
+    background:  url('./Images/portfolio1.jpg') ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    width: 96vw;
+    height: 97vh;
+    top: 3vh;
+    left: 2vw;
+    border-top-left-radius: 2.5rem;
+    border-top-right-radius: 2.5rem;
+    box-shadow: 0 0 2rem 1rem rgb(6, 127, 151);
+}
+
+.bg-block .skills-block{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 2.5rem;
+    border-top-right-radius: 2.5rem; 
+} 
+
+.skills-block .name-skill hr{
+    border-top: 0.4rem solid rgb(255, 136, 24);
+    border-bottom: 0.4rem solid red;
+    background: rgb(255, 220, 23);
+    width: 0;
+}  
+.skills-block:hover>.name-skill hr{
+    animation: line 0.5s forwards linear;
+    -webkit-animation: line 0.5s forwards linear;
+}
+@keyframes line{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 100%;
+    }
+}
+
+.bg-block .skills-block .skill-box{
+    position: absolute;
+    top: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    align-content: flex-start;
+    justify-content: space-evenly;
+    opacity: 0;
+}
+.skills-block .skill{
+    color: rgb(255, 255, 255);
+    margin: 1rem;
+    padding: 1rem;
+    font-size: 2rem;
+    flex-basis: 30%;
+    align-self: flex-start;
+    z-index: 2;
+} 
+.skills-block .name-skill h1{
+   font-size: 5rem;
+   flex-basis: 100%;
+   letter-spacing: 0.2rem;
+   padding: 2rem 0 0 0;
+   color: rgb(255, 255, 255);
+   -webkit-text-stroke: 0.2rem rgb(0, 72, 111);
+   text-align: center;
+   z-index: 2;
+}
+
+.skills-block .reveal-link{
+    position: absolute;
+    top: 18%;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    padding: 0 3.5rem;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    background: rgba(0, 0, 0, 0.394);
+    box-shadow: 0 0 1.5rem 1rem rgb(52, 185, 152);
+}
+
+.skills-block .reveal-link i{
+    font-size: 3rem;
+    color: rgb(136, 255, 0);
+}
+
+.skills-block .reveal-link:hover+.skill-box{
+    animation: reveal .7s forwards 1 ease;
+    -webkit-animation: reveal .7s forwards 1 ease;
+}
+
+@keyframes reveal{
+    0%{
+        opacity: 1;
+        top: 80%;
+    }
+    100%{
+        opacity: 1;
+        top: 30%;
+    }
+}
+
+.skills-block .skill-box .skill > h2{
+    font-size: 2.3rem;
+    font-family: 'Nunito', sans-serif;
+    -webkit-text-stroke: 0.1rem rgb(77, 193, 255);
+    color: rgb(255, 255, 255);
+}
+
+.skills-block .skill-box .skill > p{
+    font-size: 1.7rem;
+    word-spacing: 0.2rem;
+    letter-spacing: 0.1rem;
+    padding: 1rem 0;
+    color:rgb(255, 255, 255);
+}
+
+.skills-block .reveal-link:hover+.skill-box .skill{
+    animation: box-shadow 1.5s forwards ease;
+    -webkit-animation: box-shadow 1.5s forwards ease;
+}
+
+@keyframes box-shadow{
+    95%,100%{
+        background: rgba(0, 0, 0, 0.394);
+        box-shadow: 0 0 0.8rem .3rem rgb(0, 0, 0);
+        border-radius: 1rem;
+        -webkit-border-radius: 1rem;
+        -moz-border-radius: 1rem;
+        -ms-border-radius: 1rem;
+        -o-border-radius: 1rem;
+    }
+}
+
+/* ###########SECTION2#################### */
+
+#section-block2{
+    height: 100vh;
+    background: rgb(74, 7, 7);
+    position: relative;
+}
+
+#section-block2 .other-slot{
+    background: url('./Images/portfolio2.jpg') ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    width: 96vw;
+    height: 85vh;
+    left: 2vw;
+    border-bottom-left-radius: 2.5rem;
+    border-bottom-right-radius: 2.5rem;
+    box-shadow: 0 0 1rem 0.5rem rgb(221, 11, 11);
+}
+
+.other-slot .project-box .project-heading h1{
+    text-align: center;
+    color: white;
+    font-size: 5rem;
+    padding: 2rem;
+    background: rgb(16, 13, 13);
+    -webkit-text-stroke: 0.2rem red;
+    box-shadow: 0 0 0.7rem 0.4rem red;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+
+#section-block2 #footer{
+    position: relative;
+    bottom: -2%;
+    height: 13vh;
+    background: rgb(0, 21, 58);
+    width: 100%;   
+}
+
+/* ########PROJECTS-STYLE######## */
+#section-block2 .project-box .project-slot1{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 3rem;
+    background: rgba(0, 0, 0, 0.698);
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    box-shadow: 0 0 1rem 1rem rgb(255, 38, 0);
+}
+.project-slot1 p{
+    font-size: 2rem;
+}
+
+/* ##############################################ENDDDDD######## */
+
+#footer .social-links{
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+#footer .social-links a{
+    font-size: 6rem;
+    margin: 0 1rem;
+    line-height: 0;
+    color: white;
+}
+#footer .social-links a.instagram{
+    color: rgb(219, 15, 49);
+}
+
+#footer h3{
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -webkit-text-stroke: 0.1rem rgb(30, 109, 113);
+}
+
+/* ######ABOUT AND CONTACT######## */
+
+#header #about-me{
+    position: absolute;
+    display: flex;
+    width: 45%;
+    height: 45%;
+    right: 2%;
+    bottom: 20%;
+    box-shadow: 0 0 1.2rem .2rem rgb(127, 89, 6);
+    border-radius:2rem;
+    -webkit-border-radius:2rem;
+    -moz-border-radius:2rem;
+    -ms-border-radius:2rem;
+    -o-border-radius:2rem;
+    opacity: 0;
+    background: linear-gradient(rgb(218, 221, 29), rgb(224, 176, 17));
+    
+}
+.about:hover ~ #about-me{
+    animation: show-about .6s forwards ease;
+    -webkit-animation: show-about .6s forwards ease;
+}
+@keyframes show-about{
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+#header #about-me .img-block{
+    height: 100%;
+    flex-basis: 50%;
+}
+#header #about-me .img-block img{
+    object-fit: cover;
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin-left: 50%;
+    margin-top: 3rem;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    box-shadow: 0 0 .8rem .3rem rgb(110, 108, 8);
+}
+#header #about-me .img-block h3{
+    text-align: center;
+    font-size: 1.8rem;
+    margin: 2rem 0 .5rem 0;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    -webkit-text-stroke: 0.1rem rgb(21, 117, 82);
+}
+#header #about-me .img-block h4{
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+#header #about-me .text-block{
+    flex-basis: 50%;
+    background: rgba(255, 255, 255, 0.318);
+    padding: 2rem 1rem 1rem 2rem;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    margin: 2rem;
+    box-shadow: 0 0 .5rem .1rem rgb(221, 154, 31);
+}
+#header #about-me .text-block p{
+    font-size: 1.3rem;
+    font-family: 'Playfair Display', sans-serif;
+    font-weight: 500;
+}
+/* #######ABOUT ENDS CONTACT STARTS#################################### */
+
+#header #contact-me{
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    width: 20%;
+    height: 60%;
+    right: 10%;
+    bottom: 5%;
+    box-shadow: 0 0 1.2rem .5rem rgb(139, 105, 13);
+    border-radius:2rem;
+    -webkit-border-radius:2rem;
+    -moz-border-radius:2rem;
+    -ms-border-radius:2rem;
+    -o-border-radius:2rem;
+    background: linear-gradient(rgb(228, 207, 15), rgb(21, 165, 178));
+    opacity: 0;
+}
+
+.contact:hover ~ #contact-me{
+    animation: show-contact 0.6s forwards ease;
+    -webkit-animation: show-contact 0.6s forwards ease;
+}
+@keyframes show-contact{
+    0%{
+        opacity: 0;
+    }
+    
+    100%{
+        opacity: 1;
+    }
+}
+
+
+#header #contact-me .img-block{
+    flex-basis: 30%;
+    height: 30%;
+}
+#header #contact-me .img-block img{
+    object-fit: cover;
+    width: 9rem;
+    height: 9rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin-left: 50%;
+    margin-top: 2rem;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    box-shadow: 0 0 .5rem .2rem rgb(65, 61, 61);
+}
+
+#header #contact-me .contact-info i{
+    font-size: 2rem;
+    display: inline;
+    color: #ff3c00e5;
+}
+
+#header #contact-me .contact-info .gmail{
+    
+    padding: 1.5rem 1rem;
+    margin-top: 1rem;
+    background: rgba(255, 255, 255, 0.221);
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    box-shadow: 0 0 .5rem 0.1rem rgb(105, 97, 97);
+}
+
+#header #contact-me .contact-info .phone-no{
+    margin-top: 1rem;
+    padding: 1.5rem 1rem;
+    background: rgba(255, 255, 255, 0.222);
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    box-shadow: 0 0 .5rem 0.1rem rgb(105, 95, 95);
+}
+
+#header #contact-me .contact-info h3{
+    display: inline;
+    font-size: 1.3rem;
+    padding-left: 1rem;
+    color: rgb(0, 0, 0);
+}
+
+#header #contact-me .contact-info p{
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 900;
+    color: rgb(84, 11, 11);
+}
+#header #contact-me .contact-info .other-info p{
+    padding: 1.5rem;
+    font-weight: 900;
+    color: rgb(0, 0, 0);
+    font-family: sans-serif;
+}
+/* ####################################END############################ */
+/* ########---------responsive---------######### */
+@media (max-width: 250px){
+    *{
+      
+        display: none;
+    }
+}
+@media (min-width: 250px) and (max-width: 350px){
+    *{
+        font-size: 6px;
+    }
+    .home, .about, .contact{
+        display: none;
+    }
+
+    #header .my-short-info{
+        left: 50%;
+        width: 90%;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+    }
+    #header .my-short-info .my-name{
+        width: 100%;
+    }
+
+    .my-short-info .title{
+        text-align: center;
+    }
+    #header #about-me{
+        opacity: 1;
+        flex-direction: column;
+        width: 80%;
+        height: 50%;
+        bottom: 10%;
+        left: 50%;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+        background: rgba(255, 208, 53, 0.58);
+}
+    #header #about-me div.img-block{
+        flex-basis: 40%;
+    }
+    #header #about-me .img-block img{
+        padding: 0;
+        height: 10rem;
+        width: 10rem;
+    }
+    #header #about-me .text-block{
+        background: rgba(255, 255, 255, 0.429);
+        margin: 0;
+        flex-basis: 60%;
+        border-radius: 2rem;
+        -webkit-border-radius: 2rem;
+        -moz-border-radius: 2rem;
+        -ms-border-radius: 2rem;
+        -o-border-radius: 2rem;
+    }
+    #header .scroll-sign i{
+        font-size: 3rem;
+    }
+    #section-block1 .reveal-link{
+        display: none;
+    }
+    #section-block1 .skill-box{
+        flex-direction: column;
+        opacity: 1;
+        top: 10%;
+    }
+    #section-block1 .skill-box .skill{
+        width: 90%;
+        background: rgba(0, 0, 0, 0.532);
+        box-shadow: 0 0 .8rem .3rem rgb(158, 168, 17);
+        border-radius: 1rem;
+        margin-left: 5%;
+        padding: 0.5rem;
+    }
+    #section-block1 .skills-block .name-skill hr{
+        width: 100%;
+        border-top: 0.3rem solid rgb(255, 136, 24);
+        border-bottom: 0.3rem solid red;
+        animation: none;
+        -webkit-animation: none;
+    }
+    #section-block2 .other-slot .project-box .project-slot1{
+        width: 90%;
+    }
+    #footer h3{
+        display: none;
+    }
+    #footer .social-links a i{
+        font-size: 4rem;
+    }
+}
+
+@media (min-width: 351px) and (max-width: 500px){
+    *{
+        font-size: 7px;
+    }
+    .home, .about, .contact{
+        display: none;
+    }
+
+    #header .my-short-info{
+        left: 50%;
+        width: 90%;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+    }
+    #header .my-short-info .my-name{
+        width: 100%;
+    }
+
+    .my-short-info .title{
+        text-align: center;
+    }
+    #header #about-me{
+        opacity: 1;
+        flex-direction: column;
+        width: 80%;
+        height: 50%;
+        bottom: 10%;
+        left: 50%;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+        background: rgba(255, 208, 53, 0.58);
+}
+    #header #about-me div.img-block{
+        flex-basis: 40%;
+    }
+    #header #about-me .img-block img{
+        padding: 0;
+        height: 10rem;
+        width: 10rem;
+    }
+    #header #about-me .text-block{
+        background: rgba(255, 255, 255, 0.429);
+        margin: 0;
+        flex-basis: 60%;
+        border-radius: 2rem;
+        -webkit-border-radius: 2rem;
+        -moz-border-radius: 2rem;
+        -ms-border-radius: 2rem;
+        -o-border-radius: 2rem;
+    }
+    #header .scroll-sign i{
+        font-size: 3.2rem;
+    }
+    #section-block1 .reveal-link{
+        display: none;
+    }
+    #section-block1 .skill-box{
+        flex-direction: column;
+        opacity: 1;
+        top: 12%;
+    }
+    #section-block1 .skill-box .skill{
+        width: 90%;
+        background: rgba(0, 0, 0, 0.532);
+        box-shadow: 0 0 .8rem .3rem rgb(158, 168, 17);
+        border-radius: 1rem;
+        margin-left: 5%;
+        padding: 0.5rem;
+    }
+    #section-block1 .skills-block .name-skill hr{
+        width: 100%;
+        border-top: 0.3rem solid rgb(255, 136, 24);
+        border-bottom: 0.3rem solid red;
+        animation: none;
+        -webkit-animation: none;
+    }
+    #section-block2 .other-slot .project-box .project-slot1{
+        width: 90%;
+    }
+    #footer h3{
+        display: none;
+    }
+    #footer .social-links a i{
+        font-size: 4.3rem;
+        margin: 1rem;
+    }
+}
+
+@media (min-width: 501px) and (max-width: 700px){
+    *{
+        font-size: 8px;
+    }
+    #header .about{
+        left: 5%;
+        top:12%;
+    }
+    #header .home i, 
+    #header .about i,
+    #header .contact i{
+        font-size: 3.5rem;
+    }
+    #header .contact{
+        left: 5%;
+        top: 20%;
+    }
+    #header .my-short-info .my-name{
+        width: 72%;
+    }
+    #header .scroll-sign i{
+        font-size: 3.5rem;
+    }
+    /* ##########ABOUT##### */
+    #header #about-me{
+        width: 80%;
+        height: 35%;
+        background: linear-gradient(rgba(218, 221, 29, 0.608), rgba(243, 92, 10, 0.449));
+    }
+    #header #about-me .img-block{
+        height: 100%;
+        flex-basis: 40%;
+    }
+    #header #about-me div.img-block h3{
+        -webkit-text-stroke: 0.1rem rgb(0, 0, 0);
+    }
+    #header #about-me .img-block img{
+        width: 9rem;
+        height: 9rem;
+    }
+    #header #about-me .text-block{
+        flex-basis: 65%;
+    }
+    #header #about-me .text-block p{
+        font-size: 1.3rem;
+    }
+    /* #############CONTACT##########? */
+
+    #header #contact-me{
+        width: 40%;
+        height: 50%;
+        bottom: 15%;
+        background: linear-gradient(rgba(228, 207, 15, 0.525), rgba(21, 165, 178, 0.456));
+    }
+    /* ############### */
+    .skills-block .reveal-link{
+        position: absolute;
+        top: 14%;
+        left: 50%;    
+    }
+    .bg-block .skills-block .skill-box{
+        flex-direction: column;
+    }
+    @keyframes reveal{
+        0%{
+            opacity: 1;
+            top: 80%;
+        }
+        100%{
+            opacity: 1;
+            top: 20%;
+        }
+    }
+    #section-block1 .skill-box .skill{
+        width: 90%;
+        border-radius: 1rem;
+        margin-left: 5%;
+        padding: 0.5rem;
+        margin-bottom: 1.5rem;
+    }
+    #section-block1 .skill-box .skill p{
+        font-size: 1.5rem;
+    }
+    @keyframes box-shadow{
+        95%,100%{
+            background: rgba(0, 0, 0, 0.511);
+            box-shadow: 0 0 0.5rem .5rem rgb(146, 168, 24);
+            border-radius: 1rem;
+            -webkit-border-radius: 1rem;
+            -moz-border-radius: 1rem;
+            -ms-border-radius: 1rem;
+            -o-border-radius: 1rem;
+        }
+    }
+    #section-block2 .other-slot .project-box .project-slot1{
+        width: 90%;
+        box-shadow: 0 0 1rem 1rem rgba(185, 25, 25, 0.946);
+    }
+    #footer h3{
+        display: none;
+    }
+    #footer .social-links a i{
+        font-size: 4.3rem;
+        margin: 1rem;
+    }
+}
+
+@media (min-width: 701px) and (max-width: 950px){
+    *{
+        font-size: 9px;
+    }
+    #header .about{
+        left: 4%;
+        top:13%;
+    }
+    #header .home{
+        left: 4%;
+    }
+    #header .home i, 
+    #header .about i,
+    #header .contact i{
+        font-size: 3.5rem;
+    }
+    #header .contact{
+        left: 4%;
+        top: 22%;
+    }
+    #header .scroll-sign i{
+        font-size: 3.5rem;
+    }
+     /* ##########ABOUT##### */
+     #header #about-me{
+        width: 65%;
+        height: 40%;
+        right: 4%;
+        background: linear-gradient(rgba(218, 221, 29, 0.608), rgba(243, 92, 10, 0.449));
+    }
+    #header #about-me .img-block{
+        height: 100%;
+        flex-basis: 40%;
+    }
+    #header #about-me div.img-block h3{
+        -webkit-text-stroke: 0.1rem rgb(0, 0, 0);
+    }
+    #header #about-me .img-block img{
+        width: 9rem;
+        height: 9rem;
+    }
+    #header #about-me .text-block{
+        flex-basis: 65%;
+    }
+    #header #about-me .text-block p{
+        font-size: 1.3rem;
+    }
+    /* #############CONTACT##########? */
+
+    #header #contact-me{
+        width: 33%;
+        height: 53%;
+        bottom: 10%;
+        background: linear-gradient(rgba(228, 207, 15, 0.525), rgba(21, 165, 178, 0.456));
+    }
+    /* ############### */
+    .skills-block .reveal-link{
+        position: absolute;
+        top: 17%;
+        padding: 0 2.5rem;
+        box-shadow: 0 0 .8rem .5rem rgb(52, 185, 152);
+    }
+    #section-block1 .skill-box .skill p{
+        font-size: 1.5rem;
+    }
+    @keyframes reveal{
+        0%{
+            opacity: 1;
+            top: 80%;
+        }
+        100%{
+            opacity: 1;
+            top: 24%;
+        }
+    }
+    #section-block2 .other-slot .project-box .project-slot1{
+        width: 90%;
+        box-shadow: 0 0 .5rem .2rem rgba(255, 239, 8, 0.946);
+    }
+    #footer h3{
+        display: none;
+    }
+    #footer .social-links a i{
+        font-size: 4.3rem;
+        margin: 1rem;
+    }
+}
+
+@media (min-width: 951px) and (max-width: 1250px){
+    *{
+        font-size: 59%;
+    }
+    #header .about{
+        left: 12%;
+    }
+    #header .contact{
+        left: 19%;
+    }
+    #header #about-me{
+        width: 60%;
+        height: 40%;
+        right: 5%;
+        background: linear-gradient(rgba(218, 221, 29, 0.608), rgba(243, 92, 10, 0.449));
+    }
+    #header #about-me .img-block{
+        height: 100%;
+        flex-basis: 40%;
+    }
+    #header #about-me div.img-block h3{
+        -webkit-text-stroke: 0.1rem rgb(0, 0, 0);
+    }
+    #header #about-me .img-block img{
+        width: 9.5rem;
+        height: 9.5rem;
+    }
+    #header #about-me .text-block{
+        flex-basis: 65%;
+    }
+
+    #header #contact-me{
+        width: 28%;
+        height: 53%;
+        bottom: 10%;
+        background: linear-gradient(rgba(228, 207, 15, 0.525), rgba(21, 165, 178, 0.456));
+    }
+
+    .skills-block .reveal-link{
+        position: absolute;
+        top: 17%;
+        padding: 0 3.2rem;
+        box-shadow: 0 0 .8rem .5rem rgb(52, 185, 152);
+    }
+    #section-block1 .skill-box .skill p{
+        font-size: 1.6rem;
+    }
+    @keyframes reveal{
+        0%{
+            opacity: 1;
+            top: 80%;
+        }
+        100%{
+            opacity: 1;
+            top: 28%;
+        }
+    }
+    #section-block2 .other-slot .project-box .project-slot1{
+        width: 90%;
+        box-shadow: 0 0 .5rem .2rem rgba(255, 239, 8, 0.946);
+    }
+    #footer h3{
+        position: absolute;
+        top: 50%;
+        left: 30%;
+    }
+    #footer .social-links a i{
+        font-size: 3.5rem;
+        margin: 1rem;
+    }
+}
