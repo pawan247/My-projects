@@ -1,0 +1,62 @@
+body{
+    font-size: 10px;
+    font-family: sans-serif;
+    background: rgb(33, 24, 24);
+    color: rgb(206, 199, 199);
+}
+.generator{
+    /*border: 2px solid black;
+    */position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    background: black;
+    padding: 2rem;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.g-heading{
+    line-height: 0;
+    margin-bottom: 3rem;
+    width: 300px;
+}
+.g-heading h2{
+    font-size: 1.8rem;
+    color: rgb(114, 202, 202);
+}
+.g-heading p{
+    font-size: 0.8rem;
+    text-align: center;
+    color: rgb(216, 187, 84);
+    font-weight: 700;
+    padding: 0.2rem 0;
+}
+
+#form label{
+    font-size: 0.9rem;
+}
+button#createBtn{
+    margin-top: 1.5rem;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+input#thePassword{
+    width: 90%;
+    margin-top: 2rem;
+    outline: none;
+    background: rgb(224, 217, 217);
+}
+#clipboard{
+    font-size: 1.4rem;
+}
